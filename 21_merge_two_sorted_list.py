@@ -4,7 +4,7 @@ class ListNode:
         self.val = val
         self.next = next
 
-# 1 iterative solution
+# 1 recursion solution
 class Solution:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         if not l1: return l2
@@ -17,7 +17,7 @@ class Solution:
             l2.next = self.mergeTwoLists(l1, l2.next)
             return l2
 
-# 2 recursion solution
+# 2 iterative solution
 class Solution2:
     def mergeTwoLists(self, l1: ListNode, l2: ListNode) -> ListNode:
         dum = ListNode(None)
